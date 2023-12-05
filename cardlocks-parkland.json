@@ -1,0 +1,331 @@
+[
+  {
+    "LOCATION": "Abbotsford Cardlock\n34624 Vye Road\nAbbotsford, BC    V2S 8J7",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "Store: M-F 8:30am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Airdrie Cardlock\n208 East Lake Blvd NE\nAirdrie, AB   T4A 2G2",
+    "CONTACT INFO": "Phone: (403) 912-3711",
+    "HOURS": "24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Barriere Cardlock\n255 Gilbert Drive\nBarriere, BC   V0E 1E0",
+    "CONTACT INFO": "Phone: (250) 374-8144\nFax: (250) 374-2189",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel"
+  },
+  {
+    "LOCATION": "Bowden Cardlock\n34449 QE2 Northbound\nBowden, AB   T0M 0K0",
+    "CONTACT INFO": "Phone: (403) 224-3552",
+    "HOURS": "24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nDEF\nRestroom"
+  },
+  {
+    "LOCATION": "Burns Lake Cardlock\n351 Railway Ave\nBurns Lake, BC",
+    "CONTACT INFO": "Phone: (250) 692-3511\nFax: (250) 692-3702",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nLubricants"
+  },
+  {
+    "LOCATION": "Cache Creek Cardlock\n508 Trans Canada Highway (at HWY 97) Boston Flats\nCache Creek, BC",
+    "CONTACT INFO": "Phone: (250) 374-8144\nFax: (250) 374-2189",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nStorefront\nRestroom"
+  },
+  {
+    "LOCATION": "Calgary NE Cardlock\n2259 - 23rd Street NE\nCalgary, AB   T2E 8J8",
+    "CONTACT INFO": "Phone: (403) 236-3187",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nGasoline\nStorefront\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Calgary SE Cardlock\n4055 - 106th Ave SE\nCalgary, AB   T2C 5B3",
+    "CONTACT INFO": "Phone: (403) 236-3187\nFax: (403) 236-1501",
+    "HOURS": "Store: M-F 8am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Calgary Eastfield Cardlock\n5250 - 50th Ave SE\nCalgary, AB   T2B 3T1",
+    "CONTACT INFO": "Phone: (403) 229-4444",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nDEF\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Campbell River Cardlock\n1600 Tamarac Street\nCampbell River, BC",
+    "CONTACT INFO": "Phone:  1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Castlegar Cardlock\n2180 6th Ave\nCastlegar, BC   V1N 3B2",
+    "CONTACT INFO": "Phone: (250) 374-8144",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Chilliwack Cardlock\n44025 Yale Road West\nChilliwack, BC   V2R 3Z9",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "Store: M-F 8am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom\nShowers\nParking"
+  },
+  {
+    "LOCATION": "Cloverdale Cardlock\n5504 - 176th Street\nCloverdale, BC    V3S 4C3",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Cochrane Cardlock\n439 Griffin Road E\nCochrane, AB   T4C 2B8",
+    "CONTACT INFO": "Phone: (403) 219-6025",
+    "HOURS": "24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Coquitlam Cardlock\n2595 Shuswap Avenue\nCoquitlam, BC   V3K 6K2",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Cranbrook Cardlock\n498 Van Horne Street S\nCranbrook, BC   V03 2S0",
+    "CONTACT INFO": "Phone: (250) 374-8144\nFax: (250) 837-6010",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel"
+  },
+  {
+    "LOCATION": "Delta North Cardlock\n10187 Swenson Way\nDelta, BC   V4G 1J3",
+    "CONTACT INFO": "Phone:  1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nRestroom"
+  },
+  {
+    "LOCATION": "Deltaport Cardlock\n2859 41B Street\nDelta, BC   V4K 3N2",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "Store: M-F 8am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom"
+  },
+  {
+    "LOCATION": "Annacis Island Cardlock\n628 Derwent Way\nDelta, BC   V3M 5P8",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Duncan Cardlock\n7809 Mays Road\nDuncan, BC   V9L 6A8",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nDEF\nRestroom"
+  },
+  {
+    "LOCATION": "Edmonton Cardlock\n11911 - 168th St NW\nEdmonton, AB   T5V 1M9",
+    "CONTACT INFO": "Phone: (780) 455-7900\nFax: (780) 455-6605",
+    "HOURS": "24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Grand Forks Cardlock\n7778 Donaldson Ave\nGrand Forks, BC   V0H 1H2",
+    "CONTACT INFO": "Phone: (250) 374-8144\nFax: (250) 374-2189",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Flood Cardlock\n61950 Flood Hope Road\nHope, BC   V0X 1L2",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Kamloops (West) Cardlock\n1885 Versatile Drive\nKamloops, BC   V1S 1C5",
+    "CONTACT INFO": "Phone: (250) 374-8144\nFax: (250) 374-2189",
+    "HOURS": "Store: M-F 8am-5pm, Sat 9am-12pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Kamloops (North) Cardlock\nYellowhead Hwy 5 & Mt Paul Hwy\nKamloops, BC",
+    "CONTACT INFO": "Phone: (250) 374-8144\nFax: (250) 374-2189",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Kelowna North Cardlock\n2659 Acland Road\nKelowna, BC   V1X 7J3",
+    "CONTACT INFO": "Phone: (250) 765-4462\nFax: (250) 765-7074",
+    "HOURS": "Store: M-F 7am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Kitimat Cardlock\n191 Enterprise Avenue\nKitimat, BC",
+    "CONTACT INFO": "Phone: (250) 635-5414\nFax: (250) 635-7675",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline"
+  },
+  {
+    "LOCATION": "Langley North Cardlock\n9450 - 200th Street\nLangley, BC   V1M 3A6",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nRestroom\nShowers\nParking"
+  },
+  {
+    "LOCATION": "Nanaimo Cardlock\n33 Maki Road\nNanaimo, BC   V9R 6Z9",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Nanaimo North Cardlock\n4391 Boban Drive\nNanaimo, BC   V9T 5V9",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Parksville Cardlock\n1480 Industrial Way\nParksville, BC   V9P 1W3",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel"
+  },
+  {
+    "LOCATION": "Port Hardy Bulk Plant\n6740 Bear Cove Road\nPort Hardy, BC   \n\nPipeline card not accepted at this site.",
+    "CONTACT INFO": "Phone: (250) 949-6405\nFax: (250) 949-6381",
+    "HOURS": "Store: M-F 8am-5pm",
+    "TYPE": "Bulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nLubricants"
+  },
+  {
+    "LOCATION": "Port Hardy Cardlock\n7980 Goodspeed Road\nPort Hardy, BC   V0N 2P0",
+    "CONTACT INFO": "Phone: (250) 949-6405\nFax: (250) 949-6381",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Prince George Cardlock\n1000 Great Street\nPrince George, BC   V2N 2K8",
+    "CONTACT INFO": "Phone: (250) 562-4111\nFax: (250) 562-9825",
+    "HOURS": "Store: M-F 8am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Prince George North Cardlock\n2202 Northwood Pulpmill Road\nPrince George, BC",
+    "CONTACT INFO": "Phone: (250) 562-4111\nFax: (250) 562-9825",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel"
+  },
+  {
+    "LOCATION": "Revelstoke Cardlock\n142 Hwy 23 North\nRevelstoke, BC   V0E 2S0",
+    "CONTACT INFO": "Phone: (250) 837-3324\nFax: (250) 837-6010",
+    "HOURS": "Store: M-F 8am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nLubricants\nStorefront\nRestroom"
+  },
+  {
+    "LOCATION": "Richmond Marina\n7891 Grauer Rd\nRichmond, BC   V7B 1N4\n\nPipeline card not accepted at this site.",
+    "CONTACT INFO": "Phone: (604) 278-2181\nFax: (604) 278-2182",
+    "HOURS": "Marina: M-Sun 6am-6pm\nCardlock: 24 Hr",
+    "TYPE": "Marina",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nLubricants"
+  },
+  {
+    "LOCATION": "Richmond Cardlock\n7891 Grauer Rd\nRichmond, BC   V7B 1N4",
+    "CONTACT INFO": "Phone: (604) 278-2181\nFax: (604) 278-2182",
+    "HOURS": "Store: M-Sun 6am-6pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nLubricants\nStorefront"
+  },
+  {
+    "LOCATION": "Smithers Cardlock\n3100 Tatlow Road\nSmithers, BC   V0J 2N0",
+    "CONTACT INFO": "Phone: (250) 847-3350\nFax: (250) 847-2278",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nLubricants"
+  },
+  {
+    "LOCATION": "Squamish Cardlock\n38926 Progress Way\nSquamish, BC   V8B 0K5",
+    "CONTACT INFO": "Phone: 1-800-331-7353",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline"
+  },
+  {
+    "LOCATION": "Steveston Marina\nFoot of 6th Avenue\nSteveston, BC   \n\nPipeline card not accepted at this site.",
+    "CONTACT INFO": "Phone: (604) 277-4712\nFax: (604) 277-4712",
+    "HOURS": "Jun-Sept: 7am-7pm\nOct-May: 8am-5pm",
+    "TYPE": "Marina",
+    "OFFERINGS": "Diesel\nMarked Diesel\nLubricants\nStorefront"
+  },
+  {
+    "LOCATION": "Strathmore Cardlock\n421 Ridge Road\nStrathmore, AB   T1P 1B5",
+    "CONTACT INFO": "Phone: (403) 934-3044",
+    "HOURS": "24 Hr",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom\nCar Wash"
+  },
+  {
+    "LOCATION": "Terrace Cardlock\n3215 Hwy 16 East\nTerrace, BC   V8G 4P3",
+    "CONTACT INFO": "Phone: (250) 635-5414\nFax: (250) 635-7675",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nLubricants\nRestroom\nShowers"
+  },
+  {
+    "LOCATION": "Coal Harbour Marina\nCoal Harbour\nVancouver, BC   \n\nPipeline card not accepted at this site.",
+    "CONTACT INFO": "Phone: (604) 681-7725\nFax: (604) 662-3085",
+    "HOURS": "24 Hr",
+    "TYPE": "Marina",
+    "OFFERINGS": "Diesel\nMarked Diesel\nLubricants"
+  },
+  {
+    "LOCATION": "Vanderhoof Cardlock\n219 West Hwy 16\nVanderhoof, BC",
+    "CONTACT INFO": "Phone: (250) 562-4111\nFax: (250) 562-9825",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline"
+  },
+  {
+    "LOCATION": "Vernon Cardlock\n7255 Meadowlark Road\nVernon, BC   V1B 3R6",
+    "CONTACT INFO": "Phone: (250) 765-4462\nFax: (250) 765-7074",
+    "HOURS": "24 Hr Unattended",
+    "TYPE": "Cardlock",
+    "OFFERINGS": "Diesel\nMarked Diesel\nGasoline\nRestroom"
+  },
+  {
+    "LOCATION": "Williams Lake Cardlock\n25 Hodgson Road\nWilliams Lake, BC   V2G 3P5",
+    "CONTACT INFO": "Phone: (250) 392-4224\nFax: (250) 392-6525",
+    "HOURS": "Store: M-F 8am-5pm\nCardlock: 24 Hr",
+    "TYPE": "Cardlock\nBulk Fuel",
+    "OFFERINGS": "Diesel\nMarked Diesel\nDEF\nGasoline\nLubricants\nStorefront\nRestroom\nShowers"
+  }
+]

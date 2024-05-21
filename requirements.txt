@@ -30,7 +30,7 @@ pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 pytz==2024.1
 Quandl==3.7.0
-requests==2.31.0
+requests==2.32.0
 risktools @ git+https://github.com/bbcho/risktools-dev.git@f6ee6042e4c960df734e21a56ae59cc62241d4d3
 scikit-learn==1.4.2
 scipy==1.13.0

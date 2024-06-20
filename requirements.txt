@@ -58,7 +58,7 @@ requests==2.31.0
 rich==13.7.1
 risktools @ git+https://github.com/bbcho/risktools-dev.git@f6ee6042e4c960df734e21a56ae59cc62241d4d3
 rpds-py==0.18.1
-scikit-learn==1.4.2
+scikit-learn==1.5.0
 scipy==1.13.0
 seaborn==0.13.2
 six==1.16.0

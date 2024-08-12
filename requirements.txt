@@ -65,7 +65,7 @@ six==1.16.0
 smmap==5.0.1
 soupsieve==2.5
 statsmodels==0.14.2
-streamlit==1.35.0
+streamlit==1.37.0
 tenacity==8.3.0
 threadpoolctl==3.5.0
 toml==0.10.2

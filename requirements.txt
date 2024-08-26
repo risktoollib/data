@@ -60,8 +60,6 @@ pydeck==0.9.1
 pydub==0.25.1
 pyglet==2.0.17
 Pygments==2.18.0
-pyobjc-core==10.3.1
-pyobjc-framework-Cocoa==10.3.1
 pyparsing==3.1.2
 pyrr==0.10.3
 python-dateutil==2.9.0.post0

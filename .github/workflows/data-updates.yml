@@ -1,8 +1,8 @@
-name: Update Data
+name: Update Stock Data
 
 on:
   schedule:
-    # Run every Monday at 6:00 AM UTC (after markets close on Sunday)
+    # Run every Saturday at 6:00 AM UTC
     - cron: '0 6 * * 6'
   workflow_dispatch: # Allow manual triggering
 
@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: rocker/tidyverse:4.5.1
+    permissions:
+      contents: write
+      actions: read
       
     steps:
     - name: Checkout repository
@@ -18,7 +21,7 @@ jobs:
       
     - name: Install additional R packages
       run: |
-        Rscript -e "install.packages(c('tidyquant', 'jsonlite'), repos='https://cloud.r-project.org/')"
+        Rscript -e "install.packages(c('tidyquant', 'jsonlite'), repos='https://packagemanager.posit.co/cran/latest')"
         
     - name: Run stock data update
       run: |
@@ -34,7 +37,5 @@ jobs:
           echo "No changes to commit"
         else
           git commit -m "Update stock data - $(date +'%Y-%m-%d')"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
         fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,40 @@
+name: Update Data
+
+on:
+  schedule:
+    # Run every Monday at 6:00 AM UTC (after markets close on Sunday)
+    - cron: '0 6 * * 6'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-stocks:
+    runs-on: ubuntu-latest
+    container:
+      image: rocker/tidyverse:4.5.1
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Install additional R packages
+      run: |
+        Rscript -e "install.packages(c('tidyquant', 'jsonlite'), repos='https://cloud.r-project.org/')"
+        
+    - name: Run stock data update
+      run: |
+        Rscript stocks.R
+        
+    - name: Commit and push changes
+      run: |
+        git config --global --add safe.directory /__w/$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)/$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add stocks.json
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update stock data - $(date +'%Y-%m-%d')"
+          git push
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

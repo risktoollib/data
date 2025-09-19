@@ -26036,6 +26036,26 @@
       "value": 88.6
     },
     {
+      "date": "2025-09-15",
+      "series": "XLE",
+      "value": 88.3
+    },
+    {
+      "date": "2025-09-16",
+      "series": "XLE",
+      "value": 89.78
+    },
+    {
+      "date": "2025-09-17",
+      "series": "XLE",
+      "value": 89.99
+    },
+    {
+      "date": "2025-09-18",
+      "series": "XLE",
+      "value": 89.71
+    },
+    {
       "date": "2005-01-03",
       "series": "XOM",
       "value": 50.09
@@ -52069,6 +52089,26 @@
       "date": "2025-09-12",
       "series": "XOM",
       "value": 112.16
+    },
+    {
+      "date": "2025-09-15",
+      "series": "XOM",
+      "value": 112.35
+    },
+    {
+      "date": "2025-09-16",
+      "series": "XOM",
+      "value": 114.68
+    },
+    {
+      "date": "2025-09-17",
+      "series": "XOM",
+      "value": 115.29
+    },
+    {
+      "date": "2025-09-18",
+      "series": "XOM",
+      "value": 113.93
     },
     {
       "date": "2005-01-03",
@@ -78106,6 +78146,26 @@
       "value": 586.66
     },
     {
+      "date": "2025-09-15",
+      "series": "QQQ",
+      "value": 591.68
+    },
+    {
+      "date": "2025-09-16",
+      "series": "QQQ",
+      "value": 591.18
+    },
+    {
+      "date": "2025-09-17",
+      "series": "QQQ",
+      "value": 590
+    },
+    {
+      "date": "2025-09-18",
+      "series": "QQQ",
+      "value": 595.32
+    },
+    {
       "date": "2005-01-03",
       "series": "SPY",
       "value": 120.3
@@ -104139,6 +104199,26 @@
       "date": "2025-09-12",
       "series": "SPY",
       "value": 657.41
+    },
+    {
+      "date": "2025-09-15",
+      "series": "SPY",
+      "value": 660.91
+    },
+    {
+      "date": "2025-09-16",
+      "series": "SPY",
+      "value": 660
+    },
+    {
+      "date": "2025-09-17",
+      "series": "SPY",
+      "value": 659.18
+    },
+    {
+      "date": "2025-09-18",
+      "series": "SPY",
+      "value": 662.26
     },
     {
       "date": "2005-01-03",
@@ -130176,6 +130256,26 @@
       "value": 335.42
     },
     {
+      "date": "2025-09-15",
+      "series": "GLD",
+      "value": 338.91
+    },
+    {
+      "date": "2025-09-16",
+      "series": "GLD",
+      "value": 339.59
+    },
+    {
+      "date": "2025-09-17",
+      "series": "GLD",
+      "value": 336.97
+    },
+    {
+      "date": "2025-09-18",
+      "series": "GLD",
+      "value": 335.62
+    },
+    {
       "date": "2005-01-03",
       "series": "TLT",
       "value": 88.74
@@ -156209,6 +156309,26 @@
       "date": "2025-09-12",
       "series": "TLT",
       "value": 89.95
+    },
+    {
+      "date": "2025-09-15",
+      "series": "TLT",
+      "value": 90.16
+    },
+    {
+      "date": "2025-09-16",
+      "series": "TLT",
+      "value": 90.35
+    },
+    {
+      "date": "2025-09-17",
+      "series": "TLT",
+      "value": 90.12
+    },
+    {
+      "date": "2025-09-18",
+      "series": "TLT",
+      "value": 89.19
     },
     {
       "date": "2018-01-17",
@@ -189179,6 +189299,26 @@
       "date": "2025-09-12",
       "series": "EEM",
       "value": 52.26
+    },
+    {
+      "date": "2025-09-15",
+      "series": "EEM",
+      "value": 52.64
+    },
+    {
+      "date": "2025-09-16",
+      "series": "EEM",
+      "value": 53.03
+    },
+    {
+      "date": "2025-09-17",
+      "series": "EEM",
+      "value": 53.26
+    },
+    {
+      "date": "2025-09-18",
+      "series": "EEM",
+      "value": 53.13
     }
   ],
   "returns": [
@@ -192804,7 +192944,7 @@
       "symbol": "XLE",
       "date": "2007-05-30",
       "series": "XLE",
-      "value": 0.0207
+      "value": 0.0208
     },
     {
       "symbol": "XLE",
@@ -192858,7 +192998,7 @@
       "symbol": "XLE",
       "date": "2007-06-12",
       "series": "XLE",
-      "value": -0.0124
+      "value": -0.0123
     },
     {
       "symbol": "XLE",
@@ -194082,7 +194222,7 @@
       "symbol": "XLE",
       "date": "2008-04-03",
       "series": "XLE",
-      "value": 0.0024
+      "value": 0.0023
     },
     {
       "symbol": "XLE",
@@ -196680,7 +196820,7 @@
       "symbol": "XLE",
       "date": "2009-12-18",
       "series": "XLE",
-      "value": 0.0053
+      "value": 0.0052
     },
     {
       "symbol": "XLE",
@@ -197082,7 +197222,7 @@
       "symbol": "XLE",
       "date": "2010-03-29",
       "series": "XLE",
-      "value": 0.0192
+      "value": 0.0193
     },
     {
       "symbol": "XLE",
@@ -198078,7 +198218,7 @@
       "symbol": "XLE",
       "date": "2010-11-22",
       "series": "XLE",
-      "value": -0.0032
+      "value": -0.0031
     },
     {
       "symbol": "XLE",
@@ -198354,7 +198494,7 @@
       "symbol": "XLE",
       "date": "2011-01-28",
       "series": "XLE",
-      "value": -0.0044
+      "value": -0.0043
     },
     {
       "symbol": "XLE",
@@ -198984,7 +199124,7 @@
       "symbol": "XLE",
       "date": "2011-06-29",
       "series": "XLE",
-      "value": 0.0116
+      "value": 0.0117
     },
     {
       "symbol": "XLE",
@@ -202482,7 +202622,7 @@
       "symbol": "XLE",
       "date": "2013-10-23",
       "series": "XLE",
-      "value": -0.0158
+      "value": -0.0157
     },
     {
       "symbol": "XLE",
@@ -202764,7 +202904,7 @@
       "symbol": "XLE",
       "date": "2013-12-31",
       "series": "XLE",
-      "value": 0.0097
+      "value": 0.0096
     },
     {
       "symbol": "XLE",
@@ -207774,7 +207914,7 @@
       "symbol": "XLE",
       "date": "2017-04-26",
       "series": "XLE",
-      "value": -0.0034
+      "value": -0.0033
     },
     {
       "symbol": "XLE",
@@ -220419,6 +220559,30 @@
       "value": -0.006
     },
     {
+      "symbol": "XLE",
+      "date": "2025-09-15",
+      "series": "XLE",
+      "value": -0.0034
+    },
+    {
+      "symbol": "XLE",
+      "date": "2025-09-16",
+      "series": "XLE",
+      "value": 0.0166
+    },
+    {
+      "symbol": "XLE",
+      "date": "2025-09-17",
+      "series": "XLE",
+      "value": 0.0023
+    },
+    {
+      "symbol": "XLE",
+      "date": "2025-09-18",
+      "series": "XLE",
+      "value": -0.0031
+    },
+    {
       "symbol": "XOM",
       "date": "2005-01-04",
       "series": "XOM",
@@ -220434,7 +220598,7 @@
       "symbol": "XOM",
       "date": "2005-01-06",
       "series": "XOM",
-      "value": 0.0126
+      "value": 0.0127
     },
     {
       "symbol": "XOM",
@@ -221196,7 +221360,7 @@
       "symbol": "XOM",
       "date": "2005-07-11",
       "series": "XOM",
-      "value": 0.0096
+      "value": 0.0095
     },
     {
       "symbol": "XOM",
@@ -222840,7 +223004,7 @@
       "symbol": "XOM",
       "date": "2006-08-10",
       "series": "XOM",
-      "value": 0.0054
+      "value": 0.0053
     },
     {
       "symbol": "XOM",
@@ -224826,7 +224990,7 @@
       "symbol": "XOM",
       "date": "2007-12-04",
       "series": "XOM",
-      "value": -0.0083
+      "value": -0.0082
     },
     {
       "symbol": "XOM",
@@ -226548,7 +226712,7 @@
       "symbol": "XOM",
       "date": "2009-01-26",
       "series": "XOM",
-      "value": 0.0071
+      "value": 0.0072
     },
     {
       "symbol": "XOM",
@@ -231690,7 +231854,7 @@
       "symbol": "XOM",
       "date": "2012-06-19",
       "series": "XOM",
-      "value": 0.0164
+      "value": 0.0163
     },
     {
       "symbol": "XOM",
@@ -232494,7 +232658,7 @@
       "symbol": "XOM",
       "date": "2013-01-02",
       "series": "XOM",
-      "value": 0.0246
+      "value": 0.0247
     },
     {
       "symbol": "XOM",
@@ -232524,7 +232688,7 @@
       "symbol": "XOM",
       "date": "2013-01-09",
       "series": "XOM",
-      "value": -0.0039
+      "value": -0.0038
     },
     {
       "symbol": "XOM",
@@ -232608,7 +232772,7 @@
       "symbol": "XOM",
       "date": "2013-01-30",
       "series": "XOM",
-      "value": -0.0119
+      "value": -0.012
     },
     {
       "symbol": "XOM",
@@ -236826,7 +236990,7 @@
       "symbol": "XOM",
       "date": "2015-11-12",
       "series": "XOM",
-      "value": -0.0274
+      "value": -0.0275
     },
     {
       "symbol": "XOM",
@@ -238800,7 +238964,7 @@
       "symbol": "XOM",
       "date": "2017-03-07",
       "series": "XOM",
-      "value": -0.0038
+      "value": -0.0037
     },
     {
       "symbol": "XOM",
@@ -251655,6 +251819,30 @@
       "value": 0.0002
     },
     {
+      "symbol": "XOM",
+      "date": "2025-09-15",
+      "series": "XOM",
+      "value": 0.0017
+    },
+    {
+      "symbol": "XOM",
+      "date": "2025-09-16",
+      "series": "XOM",
+      "value": 0.0205
+    },
+    {
+      "symbol": "XOM",
+      "date": "2025-09-17",
+      "series": "XOM",
+      "value": 0.0053
+    },
+    {
+      "symbol": "XOM",
+      "date": "2025-09-18",
+      "series": "XOM",
+      "value": -0.0119
+    },
+    {
       "symbol": "QQQ",
       "date": "2005-01-04",
       "series": "QQQ",
@@ -254244,7 +254432,7 @@
       "symbol": "QQQ",
       "date": "2006-09-20",
       "series": "QQQ",
-      "value": 0.0145
+      "value": 0.0144
     },
     {
       "symbol": "QQQ",
@@ -254760,7 +254948,7 @@
       "symbol": "QQQ",
       "date": "2007-01-25",
       "series": "QQQ",
-      "value": -0.013
+      "value": -0.0129
     },
     {
       "symbol": "QQQ",
@@ -255390,7 +255578,7 @@
       "symbol": "QQQ",
       "date": "2007-06-26",
       "series": "QQQ",
-      "value": -0.0057
+      "value": -0.0058
     },
     {
       "symbol": "QQQ",
@@ -256692,7 +256880,7 @@
       "symbol": "QQQ",
       "date": "2008-05-06",
       "series": "QQQ",
-      "value": 0.0062
+      "value": 0.0061
     },
     {
       "symbol": "QQQ",
@@ -258132,7 +258320,7 @@
       "symbol": "QQQ",
       "date": "2009-04-20",
       "series": "QQQ",
-      "value": -0.0326
+      "value": -0.0327
     },
     {
       "symbol": "QQQ",
@@ -258438,7 +258626,7 @@
       "symbol": "QQQ",
       "date": "2009-07-01",
       "series": "QQQ",
-      "value": 0.0006
+      "value": 0.0005
     },
     {
       "symbol": "QQQ",
@@ -263412,7 +263600,7 @@
       "symbol": "QQQ",
       "date": "2012-10-12",
       "series": "QQQ",
-      "value": -0.0005
+      "value": -0.0004
     },
     {
       "symbol": "QQQ",
@@ -269280,7 +269468,7 @@
       "symbol": "QQQ",
       "date": "2016-09-02",
       "series": "QQQ",
-      "value": 0.0032
+      "value": 0.0033
     },
     {
       "symbol": "QQQ",
@@ -270960,7 +271148,7 @@
       "symbol": "QQQ",
       "date": "2017-10-13",
       "series": "QQQ",
-      "value": 0.0039
+      "value": 0.0038
     },
     {
       "symbol": "QQQ",
@@ -274074,7 +274262,7 @@
       "symbol": "QQQ",
       "date": "2019-11-06",
       "series": "QQQ",
-      "value": -0.0023
+      "value": -0.0022
     },
     {
       "symbol": "QQQ",
@@ -275256,7 +275444,7 @@
       "symbol": "QQQ",
       "date": "2020-08-19",
       "series": "QQQ",
-      "value": -0.0068
+      "value": -0.0067
     },
     {
       "symbol": "QQQ",
@@ -277986,7 +278174,7 @@
       "symbol": "QQQ",
       "date": "2022-06-09",
       "series": "QQQ",
-      "value": -0.0271
+      "value": -0.0272
     },
     {
       "symbol": "QQQ",
@@ -282891,6 +283079,30 @@
       "value": 0.0044
     },
     {
+      "symbol": "QQQ",
+      "date": "2025-09-15",
+      "series": "QQQ",
+      "value": 0.0085
+    },
+    {
+      "symbol": "QQQ",
+      "date": "2025-09-16",
+      "series": "QQQ",
+      "value": -0.0008
+    },
+    {
+      "symbol": "QQQ",
+      "date": "2025-09-17",
+      "series": "QQQ",
+      "value": -0.002
+    },
+    {
+      "symbol": "QQQ",
+      "date": "2025-09-18",
+      "series": "QQQ",
+      "value": 0.009
+    },
+    {
       "symbol": "SPY",
       "date": "2005-01-04",
       "series": "SPY",
@@ -283230,7 +283442,7 @@
       "symbol": "SPY",
       "date": "2005-03-28",
       "series": "SPY",
-      "value": 0.0014
+      "value": 0.0015
     },
     {
       "symbol": "SPY",
@@ -283266,7 +283478,7 @@
       "symbol": "SPY",
       "date": "2005-04-05",
       "series": "SPY",
-      "value": 0.0047
+      "value": 0.0048
     },
     {
       "symbol": "SPY",
@@ -283530,7 +283742,7 @@
       "symbol": "SPY",
       "date": "2005-06-07",
       "series": "SPY",
-      "value": 0.0008
+      "value": 0.0007
     },
     {
       "symbol": "SPY",
@@ -283716,7 +283928,7 @@
       "symbol": "SPY",
       "date": "2005-07-21",
       "series": "SPY",
-      "value": -0.0058
+      "value": -0.0059
     },
     {
       "symbol": "SPY",
@@ -283980,7 +284192,7 @@
       "symbol": "SPY",
       "date": "2005-09-22",
       "series": "SPY",
-      "value": 0.0036
+      "value": 0.0035
     },
     {
       "symbol": "SPY",
@@ -285528,7 +285740,7 @@
       "symbol": "SPY",
       "date": "2006-10-02",
       "series": "SPY",
-      "value": -0.0038
+      "value": -0.0037
     },
     {
       "symbol": "SPY",
@@ -285930,7 +286142,7 @@
       "symbol": "SPY",
       "date": "2007-01-09",
       "series": "SPY",
-      "value": -0.0009
+      "value": -0.0008
     },
     {
       "symbol": "SPY",
@@ -291366,7 +291578,7 @@
       "symbol": "SPY",
       "date": "2010-08-13",
       "series": "SPY",
-      "value": -0.0029
+      "value": -0.003
     },
     {
       "symbol": "SPY",
@@ -291390,7 +291602,7 @@
       "symbol": "SPY",
       "date": "2010-08-19",
       "series": "SPY",
-      "value": -0.0175
+      "value": -0.0176
     },
     {
       "symbol": "SPY",
@@ -292338,7 +292550,7 @@
       "symbol": "SPY",
       "date": "2011-04-05",
       "series": "SPY",
-      "value": -0.0002
+      "value": -0.0001
     },
     {
       "symbol": "SPY",
@@ -292512,7 +292724,7 @@
       "symbol": "SPY",
       "date": "2011-05-17",
       "series": "SPY",
-      "value": -0.0001
+      "value": -0.0002
     },
     {
       "symbol": "SPY",
@@ -298206,7 +298418,7 @@
       "symbol": "SPY",
       "date": "2015-02-25",
       "series": "SPY",
-      "value": -0.0009
+      "value": -0.0008
     },
     {
       "symbol": "SPY",
@@ -298296,7 +298508,7 @@
       "symbol": "SPY",
       "date": "2015-03-18",
       "series": "SPY",
-      "value": 0.0119
+      "value": 0.012
     },
     {
       "symbol": "SPY",
@@ -299904,7 +300116,7 @@
       "symbol": "SPY",
       "date": "2016-04-11",
       "series": "SPY",
-      "value": -0.0023
+      "value": -0.0024
     },
     {
       "symbol": "SPY",
@@ -304410,7 +304622,7 @@
       "symbol": "SPY",
       "date": "2019-04-04",
       "series": "SPY",
-      "value": 0.0027
+      "value": 0.0026
     },
     {
       "symbol": "SPY",
@@ -304464,7 +304676,7 @@
       "symbol": "SPY",
       "date": "2019-04-17",
       "series": "SPY",
-      "value": -0.0024
+      "value": -0.0025
     },
     {
       "symbol": "SPY",
@@ -308376,7 +308588,7 @@
       "symbol": "SPY",
       "date": "2021-11-16",
       "series": "SPY",
-      "value": 0.0039
+      "value": 0.004
     },
     {
       "symbol": "SPY",
@@ -308670,7 +308882,7 @@
       "symbol": "SPY",
       "date": "2022-01-27",
       "series": "SPY",
-      "value": -0.0049
+      "value": -0.005
     },
     {
       "symbol": "SPY",
@@ -314125,6 +314337,30 @@
       "date": "2025-09-12",
       "series": "SPY",
       "value": -0.0003
+    },
+    {
+      "symbol": "SPY",
+      "date": "2025-09-15",
+      "series": "SPY",
+      "value": 0.0053
+    },
+    {
+      "symbol": "SPY",
+      "date": "2025-09-16",
+      "series": "SPY",
+      "value": -0.0014
+    },
+    {
+      "symbol": "SPY",
+      "date": "2025-09-17",
+      "series": "SPY",
+      "value": -0.0012
+    },
+    {
+      "symbol": "SPY",
+      "date": "2025-09-18",
+      "series": "SPY",
+      "value": 0.0047
     },
     {
       "symbol": "GLD",
@@ -345363,6 +345599,30 @@
       "value": 0.002
     },
     {
+      "symbol": "GLD",
+      "date": "2025-09-15",
+      "series": "GLD",
+      "value": 0.0104
+    },
+    {
+      "symbol": "GLD",
+      "date": "2025-09-16",
+      "series": "GLD",
+      "value": 0.002
+    },
+    {
+      "symbol": "GLD",
+      "date": "2025-09-17",
+      "series": "GLD",
+      "value": -0.0077
+    },
+    {
+      "symbol": "GLD",
+      "date": "2025-09-18",
+      "series": "GLD",
+      "value": -0.004
+    },
+    {
       "symbol": "TLT",
       "date": "2005-01-04",
       "series": "TLT",
@@ -346548,7 +346808,7 @@
       "symbol": "TLT",
       "date": "2005-10-14",
       "series": "TLT",
-      "value": -0.0015
+      "value": -0.0016
     },
     {
       "symbol": "TLT",
@@ -347070,7 +347330,7 @@
       "symbol": "TLT",
       "date": "2006-02-21",
       "series": "TLT",
-      "value": -0.0017
+      "value": -0.0016
     },
     {
       "symbol": "TLT",
@@ -347898,7 +348158,7 @@
       "symbol": "TLT",
       "date": "2006-09-07",
       "series": "TLT",
-      "value": 0.0019
+      "value": 0.002
     },
     {
       "symbol": "TLT",
@@ -348750,7 +349010,7 @@
       "symbol": "TLT",
       "date": "2007-04-03",
       "series": "TLT",
-      "value": -0.0012
+      "value": -0.0013
     },
     {
       "symbol": "TLT",
@@ -348942,7 +349202,7 @@
       "symbol": "TLT",
       "date": "2007-05-18",
       "series": "TLT",
-      "value": -0.0066
+      "value": -0.0067
     },
     {
       "symbol": "TLT",
@@ -350868,7 +351128,7 @@
       "symbol": "TLT",
       "date": "2008-08-26",
       "series": "TLT",
-      "value": 0.0008
+      "value": 0.0009
     },
     {
       "symbol": "TLT",
@@ -351054,7 +351314,7 @@
       "symbol": "TLT",
       "date": "2008-10-09",
       "series": "TLT",
-      "value": -0.0085
+      "value": -0.0084
     },
     {
       "symbol": "TLT",
@@ -353514,7 +353774,7 @@
       "symbol": "TLT",
       "date": "2010-05-27",
       "series": "TLT",
-      "value": -0.023
+      "value": -0.0229
     },
     {
       "symbol": "TLT",
@@ -354930,7 +355190,7 @@
       "symbol": "TLT",
       "date": "2011-05-04",
       "series": "TLT",
-      "value": 0.0045
+      "value": 0.0044
     },
     {
       "symbol": "TLT",
@@ -357420,7 +357680,7 @@
       "symbol": "TLT",
       "date": "2012-12-27",
       "series": "TLT",
-      "value": 0.0034
+      "value": 0.0033
     },
     {
       "symbol": "TLT",
@@ -357750,7 +358010,7 @@
       "symbol": "TLT",
       "date": "2013-03-19",
       "series": "TLT",
-      "value": 0.0068
+      "value": 0.0067
     },
     {
       "symbol": "TLT",
@@ -357810,7 +358070,7 @@
       "symbol": "TLT",
       "date": "2013-04-03",
       "series": "TLT",
-      "value": 0.009
+      "value": 0.0089
     },
     {
       "symbol": "TLT",
@@ -360084,7 +360344,7 @@
       "symbol": "TLT",
       "date": "2014-10-02",
       "series": "TLT",
-      "value": -0.0087
+      "value": -0.0088
     },
     {
       "symbol": "TLT",
@@ -360216,7 +360476,7 @@
       "symbol": "TLT",
       "date": "2014-11-03",
       "series": "TLT",
-      "value": 1.706e-07
+      "value": -1.706e-07
     },
     {
       "symbol": "TLT",
@@ -360846,7 +361106,7 @@
       "symbol": "TLT",
       "date": "2015-04-07",
       "series": "TLT",
-      "value": 0.0084
+      "value": 0.0083
     },
     {
       "symbol": "TLT",
@@ -361938,7 +362198,7 @@
       "symbol": "TLT",
       "date": "2015-12-23",
       "series": "TLT",
-      "value": -0.0076
+      "value": -0.0075
     },
     {
       "symbol": "TLT",
@@ -362772,7 +363032,7 @@
       "symbol": "TLT",
       "date": "2016-07-14",
       "series": "TLT",
-      "value": -0.0146
+      "value": -0.0147
     },
     {
       "symbol": "TLT",
@@ -364428,7 +364688,7 @@
       "symbol": "TLT",
       "date": "2017-08-17",
       "series": "TLT",
-      "value": 0.0075
+      "value": 0.0074
     },
     {
       "symbol": "TLT",
@@ -366564,7 +366824,7 @@
       "symbol": "TLT",
       "date": "2019-01-17",
       "series": "TLT",
-      "value": 0.0002
+      "value": 0.0003
     },
     {
       "symbol": "TLT",
@@ -367908,7 +368168,7 @@
       "symbol": "TLT",
       "date": "2019-12-06",
       "series": "TLT",
-      "value": -0.0055
+      "value": -0.0056
     },
     {
       "symbol": "TLT",
@@ -368376,7 +368636,7 @@
       "symbol": "TLT",
       "date": "2020-03-31",
       "series": "TLT",
-      "value": -0.0082
+      "value": -0.0081
     },
     {
       "symbol": "TLT",
@@ -369498,7 +369758,7 @@
       "symbol": "TLT",
       "date": "2020-12-24",
       "series": "TLT",
-      "value": 0.004
+      "value": 0.0039
     },
     {
       "symbol": "TLT",
@@ -371124,7 +371384,7 @@
       "symbol": "TLT",
       "date": "2022-01-24",
       "series": "TLT",
-      "value": -0.0082
+      "value": -0.0083
     },
     {
       "symbol": "TLT",
@@ -376597,6 +376857,30 @@
       "date": "2025-09-12",
       "series": "TLT",
       "value": -0.0043
+    },
+    {
+      "symbol": "TLT",
+      "date": "2025-09-15",
+      "series": "TLT",
+      "value": 0.0023
+    },
+    {
+      "symbol": "TLT",
+      "date": "2025-09-16",
+      "series": "TLT",
+      "value": 0.0021
+    },
+    {
+      "symbol": "TLT",
+      "date": "2025-09-17",
+      "series": "TLT",
+      "value": -0.0025
+    },
+    {
+      "symbol": "TLT",
+      "date": "2025-09-18",
+      "series": "TLT",
+      "value": -0.0104
     },
     {
       "symbol": "COW",
@@ -390294,7 +390578,7 @@
       "symbol": "EEM",
       "date": "2008-07-28",
       "series": "EEM",
-      "value": -0.0171
+      "value": -0.017
     },
     {
       "symbol": "EEM",
@@ -390660,7 +390944,7 @@
       "symbol": "EEM",
       "date": "2008-10-22",
       "series": "EEM",
-      "value": -0.1113
+      "value": -0.1112
     },
     {
       "symbol": "EEM",
@@ -393198,7 +393482,7 @@
       "symbol": "EEM",
       "date": "2010-06-29",
       "series": "EEM",
-      "value": -0.0415
+      "value": -0.0414
     },
     {
       "symbol": "EEM",
@@ -396468,7 +396752,7 @@
       "symbol": "EEM",
       "date": "2012-08-24",
       "series": "EEM",
-      "value": 0.0003
+      "value": 0.0002
     },
     {
       "symbol": "EEM",
@@ -400410,7 +400694,7 @@
       "symbol": "EEM",
       "date": "2015-04-09",
       "series": "EEM",
-      "value": 0.0098
+      "value": 0.0099
     },
     {
       "symbol": "EEM",
@@ -404208,7 +404492,7 @@
       "symbol": "EEM",
       "date": "2017-10-11",
       "series": "EEM",
-      "value": 0.0046
+      "value": 0.0045
     },
     {
       "symbol": "EEM",
@@ -416149,6 +416433,30 @@
       "date": "2025-09-12",
       "series": "EEM",
       "value": -0.0006
+    },
+    {
+      "symbol": "EEM",
+      "date": "2025-09-15",
+      "series": "EEM",
+      "value": 0.0072
+    },
+    {
+      "symbol": "EEM",
+      "date": "2025-09-16",
+      "series": "EEM",
+      "value": 0.0074
+    },
+    {
+      "symbol": "EEM",
+      "date": "2025-09-17",
+      "series": "EEM",
+      "value": 0.0043
+    },
+    {
+      "symbol": "EEM",
+      "date": "2025-09-18",
+      "series": "EEM",
+      "value": -0.0024
     }
   ]
 }

@@ -1,4 +1,4 @@
-install.packages(c("feather","rvest","readxl")
+install.packages(c("feather","rvest","readxl"))
 library(tidyverse)
 library(tidyquant)
 library(rvest)

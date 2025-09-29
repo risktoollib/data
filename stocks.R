@@ -1,6 +1,6 @@
 library(tidyverse)
 library(tidyquant)
-
+install.packages("feather")
 tick <- c("XLE", "XOM","QQQ","SPY","GLD","TLT","COW","EEM")
 prices <- tick %>%
   tidyquant::tq_get(get = "stock.prices", from = "2005-01-01") %>%

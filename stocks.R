@@ -77,4 +77,18 @@ ercot <- ercot %>%
   dplyr::select(Date, everything())
 feather::write_feather(ercot,"ercot.feather")
 
+## Regressions
+reg1 <- dplyr::tibble(x = 1:100, y = x + x^2 + x^5)
+reg2 <- dplyr::tibble(x = seq(from =0,4*pi,,100),
+                      y = 2 * sin(2 * x) + x * 0.75)
+reg3 <- tidyquant::tq_get(x = c("ICLN","XLE"), get = "stock.prices",
+                          from = lubridate::rollback(Sys.Date() - months(120)), to = lubridate::rollback(Sys.Date())) %>%
+  dplyr::transmute(date, series = symbol, value = adjusted) %>%
+  dplyr::group_by(series) %>%
+  dplyr::mutate(value = log(value/dplyr::lag(value))) %>%
+  tidyr::drop_na() %>%
+  tidyr::pivot_wider(names_from = series,values_from = value)
+reg <- list(reg1=reg1,reg2=reg2,reg3=reg3) 
+feather::write_feather(reg,"reg.feather")
+
                  

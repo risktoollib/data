@@ -88,7 +88,24 @@ reg3 <- tidyquant::tq_get(x = c("ICLN","XLE"), get = "stock.prices",
   dplyr::mutate(value = log(value/dplyr::lag(value))) %>%
   tidyr::drop_na() %>%
   tidyr::pivot_wider(names_from = series,values_from = value)
-reg <- list(reg1=reg1,reg2=reg2,reg3=reg3) 
-feather::write_feather(reg,"reg.feather")
+feather::write_feather(reg1,"reg1.feather")
+feather::write_feather(reg2,"reg2.feather")
+feather::write_feather(reg3,"reg3.feather")
 
-                 
+# parsing exercises
+quantmod::getSymbols('MSFT', src = 'yahoo')
+microsoft <- MSFT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
+feather::write_feather(microsoft,"microsoft.feather")
+
+quantmod::getSymbols('AAPL', src = 'yahoo')
+apple <- AAPL %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
+feather::write_feather(apple,"apple.feather")
+
+quantmod::getSymbols('CVX', src = 'yahoo')
+chevron <- CVX %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
+feather::write_feather(chevron,"chevron.feather")
+
+quantmod::getSymbols('CAT', src = 'yahoo')
+caterpillar <- CAT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
+feather::write_feather(caterpillar,"caterpillar.feather")
+

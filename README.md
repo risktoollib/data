@@ -4,6 +4,7 @@
 # Data Files
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal is to provide a centralized marketplace for data in the context
@@ -14,10 +15,10 @@ Python.
 
 ## Finance
 
-- `sp500_desc` - S&P 500 constituents with sector and industry
+- `sp400_desc` - S&P 400 constituents with sector and industry
   classification.
-- `sp500_prices` - S&P 500 constituents daily prices from 2010-01-01 to
-  2020-12-31.
+- `sp400_prices` - S&P 400 constituents daily prices from 2010-01-01 to
+  recent.
 
 ## Energy
 

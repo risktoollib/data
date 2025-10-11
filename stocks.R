@@ -1,8 +1,11 @@
-install.packages(c("feather","rvest","readxl"))
+install.packages(c("feather","rvest","readxl","devtools"))
+devtools::install_github("risktoollib/RTL")
 library(tidyverse)
 library(tidyquant)
 library(rvest)
 library(readxl)
+library(arrow)
+library(RTL)
                  
 # STOCKS
 tick <- c("XLE", "XOM","QQQ","SPY","GLD","TLT","COW","EEM")
@@ -92,6 +95,30 @@ feather::write_feather(reg1,"reg1.feather")
 feather::write_feather(reg2,"reg2.feather")
 feather::write_feather(reg3,"reg3.feather")
 
+## multivariates
+
+fromDate <- "2014-01-01"
+tick <- c("CVX", "SPY")
+
+df.stock <- tick %>%
+  tidyquant::tq_get(get = "stock.prices", from = fromDate) %>%
+  dplyr::select(date, series = symbol, value = adjusted) %>% 
+  tidyr::pivot_wider(names_from = series, values_from = value)
+
+df.oil <- RTL::dfwide %>% 
+  dplyr::select(date, CL01, HO01, RB01) %>% 
+  dplyr::filter(date >= fromDate)
+
+df_long <- dplyr::inner_join(df.stock, df.oil, by = c("date")) %>%
+  stats::na.omit() %>% 
+  dplyr::mutate(CX = (2/3 * RB01 + 1/3 * HO01) * 42 - CL01) %>%
+  tidyr::pivot_longer(-date, names_to = "symbol", values_to = "value") %>%
+  dplyr::group_by(symbol) %>%
+  dplyr::mutate(value = log(value / dplyr::lag(value))) %>%
+  stats::na.omit()
+
+feather::write_feather(df_long,"cvx.feather")
+
 # parsing exercises
 quantmod::getSymbols('MSFT', src = 'yahoo')
 microsoft <- MSFT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
@@ -108,4 +135,9 @@ feather::write_feather(chevron,"chevron.feather")
 quantmod::getSymbols('CAT', src = 'yahoo')
 caterpillar <- CAT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
 feather::write_feather(caterpillar,"caterpillar.feather")
+
+
+
+
+
 

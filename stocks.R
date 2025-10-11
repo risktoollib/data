@@ -119,6 +119,27 @@ df_long <- dplyr::inner_join(df.stock, df.oil, by = c("date")) %>%
 
 feather::write_feather(df_long,"cvx.feather")
 
+## nonlin reg IR
+
+tickers <- c("DGS3MO", "DGS6MO", "DGS1", "DGS2", "DGS5", 
+             "DGS10", "DGS20", "DGS30")
+
+yields <- tickers %>%
+  tidyquant::tq_get(get = "economic.data", from = "2023-01-01") %>%
+  stats::na.omit()
+
+maturity_map <- c("DGS3MO" = 0.25, "DGS6MO" = 0.5, "DGS1" = 1, 
+                  "DGS2" = 2, "DGS5" = 5, "DGS10" = 10, 
+                  "DGS20" = 20, "DGS30" = 30)
+
+df_yields <- yields %>%
+  dplyr::mutate(maturity = maturity_map[symbol]) %>%
+  dplyr::select(date, maturity, yield = price) %>%
+  dplyr::filter(date == max(date))
+
+feather::write_feather(df_yields,"usd_cmt_yc.feather")
+
+
 # parsing exercises
 quantmod::getSymbols('MSFT', src = 'yahoo')
 microsoft <- MSFT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")

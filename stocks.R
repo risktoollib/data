@@ -106,7 +106,7 @@ df.stock <- tick %>%
   tidyr::pivot_wider(names_from = series, values_from = value)
 
 df.oil <- RTL::dfwide %>% 
-  dplyr::select(date, CL01, HO01, RB01) %>% 
+  dplyr::select(date, NG01, CL01, HO01, RB01) %>% 
   dplyr::filter(date >= fromDate)
 
 df_long <- dplyr::inner_join(df.stock, df.oil, by = c("date")) %>%

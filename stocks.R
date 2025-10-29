@@ -172,6 +172,13 @@ unemployment <- tidyquant::tq_get(x = c("AKURN","CAURN","NJURN"), get = "economi
   dplyr::group_by(state)
 feather::write_feather(unemployment,"unemployment.feather")
 
+# correlation
+
+correlation <- tidyquant::tq_get(c("IYR","SPY") ,get = "stock.prices",from = "2015-01-01", to = Sys.Date()) %>%
+  dplyr::select(date, series = symbol, value = adjusted) %>%
+  dplyr::mutate(series = stringr::str_replace_all(series,c("IYR" = "RealEstate", "SPY" = "sp400" )))
+feather::write_feather(correlation,"correlation.feather")
+
 # lpg eia data set
 
 #lpg <- RTLedu::lpgMonthly

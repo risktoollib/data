@@ -158,7 +158,49 @@ caterpillar <- CAT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "dat
 feather::write_feather(caterpillar,"caterpillar.feather")
 
 
+# unemployment
+unemployment <- tidyquant::tq_get(x = c("AKURN","CAURN","NJURN"), get = "economic.data",
+                                  from = "2002-01-01", to = Sys.Date()) %>%
+  dplyr::transmute(date,
+                   state = case_when(symbol == "NJURN" ~ "NewJersey",
+                                     symbol == "AKURN" ~ "Alaska",
+                                     symbol == "CAURN" ~ "California"),
+                   rate = price/100) %>%
+  dplyr::filter(date != dplyr::last(date)) %>%
+  dplyr::group_by(state)
+feather::write_feather(unemployment,"unemployment.feather")
 
+# lpg eia data set
 
+#lpg <- RTLedu::lpgMonthly
 
+# lpgMonthly <- RTL::eia2tidy_all(tickers = tibble::tribble(~ticker, ~name,
+#                                                           "PET.MLPEXUS2.M", "Exports",
+#                                                           "PET.MLPFPUS2.M","Production",
+#                                                           "PET.MLPIMUS2.M", "Imports"),
+#                                 key = EIAkey, long = TRUE) %>%
+#   dplyr::filter(date >= "1992-01-01") %>%
+#   dplyr::arrange(date)
+# 
+# lpgQuarterly <- lpgMonthly %>%
+#   tsibble::as_tsibble(key = series, index = date) %>%
+#   tsibble::group_by_key(series) %>%
+#   tsibble::index_by(freq = tsibble::yearquarter(date)) %>%
+#   dplyr::summarise(value = mean(value)) %>%
+#   dplyr::mutate(freq = lubridate::rollback(as.Date(freq) + months(3,abbreviate = TRUE))) %>%
+#   dplyr::rename(date = freq) %>%
+#   dplyr::ungroup() %>%
+#   dplyr::as_tibble()
 
+#feather::write_feather(lpg,"lpgMonthly.feather")
+
+# swap pricing
+
+# futs <- RTL::getPrices(
+#   feed = "CME_NymexFuturesFinal_EOD",
+#   contracts = c("CL 2026 06","CL 2026 07", "CL 2026 08", "CL 2026 09"),
+#   from = Sys.Date() - months(2),
+#   iuser = zema[[1]],
+#   ipassword = zema[[2]]
+# )
+# feather::write_feather(futs,"futs.feather")

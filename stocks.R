@@ -90,7 +90,9 @@ reg3 <- tidyquant::tq_get(x = c("ICLN","XLE"), get = "stock.prices",
   dplyr::group_by(series) %>%
   dplyr::mutate(value = log(value/dplyr::lag(value))) %>%
   tidyr::drop_na() %>%
-  tidyr::pivot_wider(names_from = series,values_from = value)
+  dplyr::select(date, series, value) 
+
+  #tidyr::pivot_wider(names_from = series,values_from = value)
 feather::write_feather(reg1,"reg1.feather")
 feather::write_feather(reg2,"reg2.feather")
 feather::write_feather(reg3,"reg3.feather")

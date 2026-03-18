@@ -179,6 +179,21 @@ correlation <- tidyquant::tq_get(c("IYR","SPY") ,get = "stock.prices",from = "20
   dplyr::mutate(series = stringr::str_replace_all(series,c("IYR" = "RealEstate", "SPY" = "sp400" )))
 feather::write_feather(correlation,"correlation.feather")
 
+# bonds
+tick <- c("AAA10Y", "BAA10Y")
+bonds <- tick %>%
+  tidyquant::tq_get(get = "economic.data", from = "1986-01-01") %>%
+  dplyr::mutate(symbol = dplyr::case_when(symbol == "AAA10Y" ~ "AAA",
+                                          symbol == "BAA10Y" ~ "BAA")) %>% 
+  dplyr::group_by(symbol) %>% 
+  tidyr::drop_na() %>% 
+  dplyr::mutate(change = price - dplyr::lag(price)) %>% 
+  stats::na.omit() %>% 
+  dplyr::select(-price) %>% 
+  tidyr::pivot_wider(names_from = symbol, values_from = change) 
+feather::write_feather(bonds,"bonds.feather")
+
+
 # lpg eia data set
 
 #lpg <- RTLedu::lpgMonthly

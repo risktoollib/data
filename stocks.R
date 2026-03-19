@@ -141,6 +141,21 @@ df_yields <- yields %>%
 
 feather::write_feather(df_yields,"usd_cmt_yc.feather")
 
+## CMT
+
+series = c("DGS1MO","DGS3MO","DGS6MO","DGS1","DGS2","DGS3","DGS5","DGS7","DGS10","DGS20","DGS30")
+
+x <- tidyquant::tq_get(series, 
+                             get = "economic.data", from = "2005-01-01") %>%
+  dplyr::group_by(symbol) %>% 
+  dplyr::mutate(ret = price - dplyr::lag(price),
+                symbol = dplyr::case_when(
+                  stringr::str_detect(string = symbol, pattern = "MO") == TRUE ~ paste0("ir",round(readr::parse_number(symbol) / 12, 2)),
+                  TRUE ~ paste0("ir",readr::parse_number(symbol)))) %>% 
+  stats::na.omit()
+
+feather::write_feather(x,"usd_cmt.feather") 
+
 
 # parsing exercises
 quantmod::getSymbols('MSFT', src = 'yahoo')

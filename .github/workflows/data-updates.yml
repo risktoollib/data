@@ -1,4 +1,4 @@
-name: Update Stock Data
+name: Update Data
 
 env:
     GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -17,25 +17,81 @@ jobs:
     permissions:
       contents: write
       actions: read
-      
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+
     - name: Install additional R packages
       run: |
         Rscript -e "install.packages(c('tidyquant', 'jsonlite'), repos='https://packagemanager.posit.co/cran/latest')"
-        
+
     - name: Run stock data update
       run: |
         Rscript stocks.R
-        
+
     - name: Commit and push changes
       run: |
         git config --global --add safe.directory /__w/$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)/$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add *.json *.feather
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "data: $(date +'%Y-%m-%d')"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+        fi
+
+  update-eia-gis:
+    runs-on: ubuntu-latest
+    container:
+      image: rocker/geospatial:4.5.1
+    permissions:
+      contents: write
+      actions: read
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Download and convert EIA GIS data
+      run: |
+        Rscript -e "
+          library(sf)
+          library(dplyr)
+          library(readr)
+
+          get_eia <- function(url) {
+            td <- tempdir()
+            tf <- tempfile(tmpdir = td, fileext = '.zip')
+            utils::download.file(url, tf, quiet = TRUE)
+            fname <- utils::unzip(tf, list = TRUE)\$Name
+            utils::unzip(tf, files = fname, exdir = td, overwrite = TRUE)
+            layer <- sub('.*/','', sub('\\.shp.*','', grep('\\.shp', fname, value=TRUE)[1]))
+            dsn   <- sub(paste0(layer,'.*'),'', file.path(td, fname)[1])
+            sf::read_sf(dsn=dsn, layer=layer, quiet=TRUE) |> sf::st_transform(4326)
+          }
+
+          pipes <- get_eia('https://www.eia.gov/maps/map_data/CrudeOil_Pipelines_US_EIA.zip')
+          refs  <- get_eia('https://www.eia.gov/maps/map_data/Petroleum_Refineries_US_EIA.zip')
+
+          sf::st_write(pipes, 'CrudeOil_Pipelines_US_EIA.geojson', delete_dsn=TRUE, quiet=TRUE)
+
+          refs |>
+            bind_cols(sf::st_coordinates(refs) |> as_tibble() |> rename(lng=X, lat=Y)) |>
+            sf::st_drop_geometry() |>
+            write_csv('Petroleum_Refineries_US_EIA.csv')
+
+          cat('pipelines:', nrow(pipes), '/ refineries:', nrow(refs), '\n')
+        "
+
+    - name: Commit and push changes
+      run: |
+        git config --global --add safe.directory /__w/$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)/$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add CrudeOil_Pipelines_US_EIA.geojson Petroleum_Refineries_US_EIA.csv
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else

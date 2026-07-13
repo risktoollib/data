@@ -46,6 +46,12 @@ sp400_joined <- sp400_prices %>%
 feather::write_feather(sp400_desc,"sp400_desc.feather")
 feather::write_feather(sp400_prices,"sp400_prices.feather")
 feather::write_feather(sp400_joined,"sp400_joined.feather")
+# CSV companion for the Python (pandas) reader: pd.read_feather needs pyarrow,
+# whose Arrow C++ runtime collides with R arrow at render teardown (segfault).
+# pandas reads .csv.gz without pyarrow. See fin450 visualization/regression chapters.
+readr::write_csv(sp400_desc, "sp400_desc.csv.gz")
+readr::write_csv(sp400_prices, "sp400_prices.csv.gz")
+readr::write_csv(sp400_joined, "sp400_joined.csv.gz")
 
 # POWER
 url = "https://www.ercot.com/misapp/GetReports.do?reportTypeId=13060&reportTitle=Historical%20DAM%20Load%20Zone%20and%20Hub%20Prices&showHTMLView=&mimicKey"
@@ -78,6 +84,7 @@ ercot <- ercot %>%
                 Date = lubridate::as_datetime(paste(Delivery.Date, lubridate::hm(Hour.Ending)))) %>%
   dplyr::select(Date, everything())
 feather::write_feather(ercot,"ercot.feather")
+readr::write_csv(ercot, "ercot.csv.gz")
 
 ## Regressions
 reg1 <- dplyr::tibble(x = 1:100, y = x + x^2 + x^5)
@@ -119,6 +126,7 @@ df_long <- dplyr::inner_join(df.stock, df.oil, by = c("date")) %>%
   stats::na.omit()
 
 feather::write_feather(df_long,"cvx.feather")
+readr::write_csv(df_long, "cvx.csv.gz") # Python reader companion (see sp400_joined note)
 
 ## nonlin reg IR
 
@@ -139,6 +147,7 @@ df_yields <- yields %>%
   dplyr::filter(date == max(date))
 
 feather::write_feather(df_yields,"usd_cmt_yc.feather")
+readr::write_csv(df_yields, "usd_cmt_yc.csv.gz") # Python reader companion (see sp400_joined note)
 
 ## CMT
 

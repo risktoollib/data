@@ -1,4 +1,4 @@
-install.packages(c("rvest","readxl","remotes"))
+install.packages(c("arrow","feather","rvest","readxl","remotes"))
 remotes::install_github("risktoollib/RTL")
 library(tidyverse)
 library(tidyquant)

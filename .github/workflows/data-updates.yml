@@ -13,7 +13,7 @@ jobs:
   update-stocks:
     runs-on: ubuntu-latest
     container:
-      image: rocker/tidyverse:4.5.1
+      image: rocker/tidyverse:4.6
     permissions:
       contents: write
       actions: read
@@ -46,7 +46,7 @@ jobs:
   update-eia-gis:
     runs-on: ubuntu-latest
     container:
-      image: rocker/geospatial:4.5.1
+      image: rocker/geospatial:4.6
     permissions:
       contents: write
       actions: read

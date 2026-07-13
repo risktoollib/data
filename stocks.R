@@ -1,4 +1,4 @@
-install.packages(c("feather","rvest","readxl","remotes"))
+install.packages(c("rvest","readxl","remotes"))
 remotes::install_github("risktoollib/RTL")
 library(tidyverse)
 library(tidyquant)
@@ -75,8 +75,7 @@ for (i in 1:length(urls)) {
 ercot <- ercot %>%
   dplyr::as_tibble(.name_repair = "universal") %>%
   dplyr::mutate(Delivery.Date = as.Date(Delivery.Date, "%m/%d/%Y"),
-                Hour.Ending = lubridate::hm(Hour.Ending),
-                Date = lubridate::as_datetime(paste(Delivery.Date, Hour.Ending))) %>%
+                Date = lubridate::as_datetime(paste(Delivery.Date, lubridate::hm(Hour.Ending)))) %>%
   dplyr::select(Date, everything())
 feather::write_feather(ercot,"ercot.feather")
 

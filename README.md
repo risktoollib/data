@@ -34,3 +34,13 @@ Python. Files are Feather V2 (the Arrow IPC file format), written with
   stations in Noth America, including location, address, amenities, and
   distance to city centers using [nomatim](https://nominatim.org/) for
   OpenStreetMap.
+
+## Fitness
+
+- `garmin` - Garmin Connect activity exports of two runners,
+  pseudonymised as `Collie` and `Hound` in the `Runner` column.
+  Unfiltered and unconverted: every column is text exactly as exported
+  (pace as `m:ss` per km, `--` for missing, activity types as labelled
+  by the runner). The only edit: names of training companions in `Title`
+  are replaced by `[companion]`. Static dataset, built outside this
+  repository; not refreshed by the GitHub Action.

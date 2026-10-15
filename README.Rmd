@@ -29,3 +29,7 @@ The main data format for dataframes is `feather` to support both R and Python. F
 
 + `esso` - Scraped data from the [Esso website](https://essocardlocks.ca/en/sites/) on carlock stations in Canada, including location, address, amenities, and distance to city centers using [nomatim](https://nominatim.org/) for OpenStreetMap. 
 + `flyingj` - Scraped data from the [Flying J website](https://locations.pilotflyingj.com/search?) on carlock stations in Noth America, including location, address, amenities, and distance to city centers using [nomatim](https://nominatim.org/) for OpenStreetMap.
+
+## Fitness
+
++ `garmin` - Garmin Connect activity exports of two runners, pseudonymised as `Collie` and `Hound` in the `Runner` column. Unfiltered and unconverted: every column is text exactly as exported (pace as `m:ss` per km, `--` for missing, activity types as labelled by the runner). The only edit: names of training companions in `Title` are replaced by `[companion]`. Static dataset, built outside this repository; not refreshed by the GitHub Action.

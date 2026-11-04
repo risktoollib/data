@@ -12,7 +12,7 @@ of educational and training material in Energy, Commodities and Finance.
 
 The main data format for dataframes is `feather` to support both R and
 Python. Files are Feather V2 (the Arrow IPC file format), written with
-`arrow::write_feather()`: read them with `arrow::read_feather()` in R,
+`arrow::write_ipc_file()`: read them with `arrow::read_ipc_file()` in R,
 `pandas.read_feather()` or `polars.read_ipc()` in Python. The legacy
 `feather` R package cannot read them.
 

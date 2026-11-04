@@ -1,5 +1,5 @@
 install.packages(c("arrow","rvest","readxl","remotes"))
-# arrow::write_feather writes Feather V2 (the Arrow IPC file format), which R arrow,
+# arrow::write_ipc_file writes Feather V2 (the Arrow IPC file format), which R arrow,
 # pandas/pyarrow and polars all read. The legacy feather package writes V1, which
 # polars cannot read and pyarrow has deprecated, so it is not used here.
 remotes::install_github("risktoollib/RTL")
@@ -46,9 +46,9 @@ sp400_joined <- sp400_prices %>%
   dplyr::mutate(ret = log(value / dplyr::lag(value))) %>%
   stats::na.omit()
 
-arrow::write_feather(sp400_desc,"sp400_desc.feather")
-arrow::write_feather(sp400_prices,"sp400_prices.feather")
-arrow::write_feather(sp400_joined,"sp400_joined.feather")
+arrow::write_ipc_file(sp400_desc,"sp400_desc.feather")
+arrow::write_ipc_file(sp400_prices,"sp400_prices.feather")
+arrow::write_ipc_file(sp400_joined,"sp400_joined.feather")
 # CSV companion for the Python (pandas) reader: pd.read_feather needs pyarrow,
 # whose Arrow C++ runtime collides with R arrow at render teardown (segfault).
 # pandas reads .csv.gz without pyarrow. See fin450 visualization/regression chapters.
@@ -86,7 +86,7 @@ ercot <- ercot %>%
   dplyr::mutate(Delivery.Date = as.Date(Delivery.Date, "%m/%d/%Y"),
                 Date = lubridate::as_datetime(paste(Delivery.Date, lubridate::hm(Hour.Ending)))) %>%
   dplyr::select(Date, everything())
-arrow::write_feather(ercot,"ercot.feather")
+arrow::write_ipc_file(ercot,"ercot.feather")
 readr::write_csv(ercot, "ercot.csv.gz")
 
 ## Regressions
@@ -102,9 +102,9 @@ reg3 <- tidyquant::tq_get(x = c("ICLN","XLE"), get = "stock.prices",
   dplyr::select(date, series, value) 
 
   #tidyr::pivot_wider(names_from = series,values_from = value)
-arrow::write_feather(reg1,"reg1.feather")
-arrow::write_feather(reg2,"reg2.feather")
-arrow::write_feather(reg3,"reg3.feather")
+arrow::write_ipc_file(reg1,"reg1.feather")
+arrow::write_ipc_file(reg2,"reg2.feather")
+arrow::write_ipc_file(reg3,"reg3.feather")
 
 ## multivariates
 
@@ -128,7 +128,7 @@ df_long <- dplyr::inner_join(df.stock, df.oil, by = c("date")) %>%
   dplyr::mutate(value = log(value / dplyr::lag(value))) %>%
   stats::na.omit()
 
-arrow::write_feather(df_long,"cvx.feather")
+arrow::write_ipc_file(df_long,"cvx.feather")
 readr::write_csv(df_long, "cvx.csv.gz") # Python reader companion (see sp400_joined note)
 
 ## nonlin reg IR
@@ -149,7 +149,7 @@ df_yields <- yields %>%
   dplyr::select(date, maturity, yield = price) %>%
   dplyr::filter(date == max(date))
 
-arrow::write_feather(df_yields,"usd_cmt_yc.feather")
+arrow::write_ipc_file(df_yields,"usd_cmt_yc.feather")
 readr::write_csv(df_yields, "usd_cmt_yc.csv.gz") # Python reader companion (see sp400_joined note)
 
 ## CMT
@@ -165,25 +165,25 @@ x <- tidyquant::tq_get(series,
                   TRUE ~ paste0("ir",readr::parse_number(symbol)))) %>% 
   stats::na.omit()
 
-arrow::write_feather(x,"usd_cmt.feather") 
+arrow::write_ipc_file(x,"usd_cmt.feather") 
 
 
 # parsing exercises
 quantmod::getSymbols('MSFT', src = 'yahoo')
 microsoft <- MSFT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
-arrow::write_feather(microsoft,"microsoft.feather")
+arrow::write_ipc_file(microsoft,"microsoft.feather")
 
 quantmod::getSymbols('AAPL', src = 'yahoo')
 apple <- AAPL %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
-arrow::write_feather(apple,"apple.feather")
+arrow::write_ipc_file(apple,"apple.feather")
 
 quantmod::getSymbols('CVX', src = 'yahoo')
 chevron <- CVX %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
-arrow::write_feather(chevron,"chevron.feather")
+arrow::write_ipc_file(chevron,"chevron.feather")
 
 quantmod::getSymbols('CAT', src = 'yahoo')
 caterpillar <- CAT %>% timetk::tk_tbl(preserve_index = TRUE, rename_index = "date")
-arrow::write_feather(caterpillar,"caterpillar.feather")
+arrow::write_ipc_file(caterpillar,"caterpillar.feather")
 
 
 # unemployment
@@ -196,14 +196,14 @@ unemployment <- tidyquant::tq_get(x = c("AKURN","CAURN","NJURN"), get = "economi
                    rate = price/100) %>%
   dplyr::filter(date != dplyr::last(date)) %>%
   dplyr::group_by(state)
-arrow::write_feather(unemployment,"unemployment.feather")
+arrow::write_ipc_file(unemployment,"unemployment.feather")
 
 # correlation
 
 correlation <- tidyquant::tq_get(c("IYR","SPY") ,get = "stock.prices",from = "2015-01-01", to = Sys.Date()) %>%
   dplyr::select(date, series = symbol, value = adjusted) %>%
   dplyr::mutate(series = stringr::str_replace_all(series,c("IYR" = "RealEstate", "SPY" = "sp400" )))
-arrow::write_feather(correlation,"correlation.feather")
+arrow::write_ipc_file(correlation,"correlation.feather")
 
 # bonds
 tick <- c("AAA10Y", "BAA10Y")
@@ -217,7 +217,7 @@ bonds <- tick %>%
   stats::na.omit() %>% 
   dplyr::select(-price) %>% 
   tidyr::pivot_wider(names_from = symbol, values_from = change) 
-arrow::write_feather(bonds,"bonds.feather")
+arrow::write_ipc_file(bonds,"bonds.feather")
 
 
 # lpg eia data set
@@ -242,7 +242,7 @@ arrow::write_feather(bonds,"bonds.feather")
 #   dplyr::ungroup() %>%
 #   dplyr::as_tibble()
 
-#arrow::write_feather(lpg,"lpgMonthly.feather")
+#arrow::write_ipc_file(lpg,"lpgMonthly.feather")
 
 # swap pricing
 
@@ -253,4 +253,4 @@ arrow::write_feather(bonds,"bonds.feather")
 #   iuser = zema[[1]],
 #   ipassword = zema[[2]]
 # )
-# arrow::write_feather(futs,"futs.feather")
+# arrow::write_ipc_file(futs,"futs.feather")
